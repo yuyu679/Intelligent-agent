@@ -1,0 +1,4 @@
+﻿  sys.c
+D:\.项目\c_and_py_stdentsys\sys.c(46,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\.项目\c_and_py_stdentsys\sys.c(23,18): warning C4101: “all_student”: 未引用的局部变量
+  c_and_py_stdentsys.vcxproj -> D:\.项目\c_and_py_stdentsys\x64\Debug\c_and_py_stdentsys.exe
