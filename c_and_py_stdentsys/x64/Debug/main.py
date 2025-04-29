@@ -1,4 +1,5 @@
 import subprocess
+from vivogpt import run
 
 def add_student(num, name, age, gpa):
     result = subprocess.run(
@@ -31,7 +32,8 @@ print('{:-^20}'.format('学生信息管理系统'))
 print(' '*8+'1:添加学生')
 print(' '*8+'2:删除学生')
 print(' '*8+'3:打印学生')
-print(' '*8+'4:退出程序')
+print(' '*8+'4:使用蓝星大模型')
+print(' '*8+'5:退出应用')
 
 while True:
     c = input(' ' * 8 + '在此输入选择:')
@@ -44,8 +46,10 @@ while True:
         delete_student(input())
     elif c == '3':
         list_students()
-    elif c == '4':
+    elif c == '5':
         print("感谢使用")
         exit()
+    elif c == '4':
+        run()
     else:
         print("无效选择，请重新输入")
